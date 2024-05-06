@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* Pagina Home */
 Route::get('/home', function () {
 
     $data = [
@@ -21,8 +22,9 @@ Route::get('/home', function () {
     ];
 
     return view('home', $data);
-});
+})->name('front-home');
 
+/* Pagina About */
 Route::get('/about', function () {
 
     $data = [
@@ -31,8 +33,9 @@ Route::get('/about', function () {
     ];
 
     return view('about', $data);
-});
+})->name('front-about');
 
+/* Pagina Boolean */
 Route::get('/boolean', function () {
 
     $data = [
@@ -41,4 +44,4 @@ Route::get('/boolean', function () {
     ];
 
     return view('boolean', $data);
-});
+})->name('front-boolean');

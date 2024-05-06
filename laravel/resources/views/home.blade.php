@@ -22,20 +22,19 @@
             class="nav justify-content-center bg-dark gap-4 py-1 fs-4"
         >
             <li class="nav-item">
-                <a class="nav-link active" href="{{ url('home') }}" aria-current="page"
+                <a class="nav-link active" href="{{ route('front-home') }}" aria-current="page"
                     >Home</a
                 >
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('about') }}">About</a>
+                <a class="nav-link" href="{{ route('front-about') }}">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('boolean') }}">Boolean</a>
+                <a class="nav-link" href="{{ route('front-boolean') }}">Boolean</a>
             </li>
         </ul>
-        
-
     </header>
+    
     <main>
         <h1 class="text-center pt-5">{{$message}}</h1>
 
